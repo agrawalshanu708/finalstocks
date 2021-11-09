@@ -1,0 +1,33 @@
+
+.navigation{
+    color: grey;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-align: center;
+}
+
+
+
+.entry {
+    display: block;
+    padding: 1rem;
+}
+
+#section-top-right {
+    width: 650px;
+    margin: 50px auto
+    font-weight: bold;
+    border: 2px solid grey;
+    padding: 1rem
+
+}
+
+#section-bottom {
+    border: 2px solid grey;
+    padding: 2rem;
+}
+
+#section-top-left {
+    max-width: 350px;
+    display: block;
+    text-align: right;
+}
