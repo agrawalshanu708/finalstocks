@@ -7,21 +7,18 @@
     background-color: var(--primary-dark);
     color: var(--primary-green)
   }
+
+  .heading {
+    margin: 2rem;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    }
   
   .container{
-    
     margin: auto;
     width: 50%;
-    
-   }
-  .heading {
-  margin: 2rem;
-  text-align: center;
-  font-family: 'Mochiy Pop P One', sans-serif;
-  
-  
-  
-  }
+    }
+ 
   
   input,label{
     display: block;
