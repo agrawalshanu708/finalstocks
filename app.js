@@ -5,18 +5,46 @@ const checkButton = document.querySelector("#check-button")
 const outputStatus = document.querySelector("#output-status")
 
 checkButton.addEventListener("click", function clickValidate(){
-    let net = (currentPrice.value - entryPrice.value)*noOfStocks.value ;
-    let x = entryPrice.value*noOfStocks.value;
-    let per = (net/x)*100;
-    if( net >=0 ){
-        outputStatus.innerText = ("your net profit  and percentage are " +net+ " and " +per+ "%")
-       
 
-    }else {
-        outputStatus.innerText = ("your net Loss  and percentage are " +net+ " and " +per+ "%")
+    let ep = Math.floor(entryPrice.value)
+    let num = Math.floor(noOfStocks.value)
+    let cp = Math.floor(currentPrice.value)
 
 
-    }
-} )
+     if(ep > 0 && num > 0 && cp > 0){
+
+        let net = (cp-ep)*num;
+        let x = ep*num;
+        let per = (net/x)*100;
+        if( net >=0 ){
+            outputStatus.innerText = ("your net Profit is Rs " +net+ " and percentage is " +per+ "%")
+    
+           
+    
+        }else {
+            outputStatus.innerText = ("your net Loss is Rs " +net+ " and percentage is " +per+ "%")
+    
+    
+        }
+
+     }else{
+          outputStatus.innerText = "Invalid Entry, please check the value once"
+     }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
